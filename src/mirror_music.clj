@@ -25,10 +25,10 @@
   "Normalise a path (removing unnecessary dots and slashes).  For directories,
 yields a string with a trailing separator."
   [path]
-  (str (FilenameUtils/normalize path)
-       (if (.isDirectory (file path))
-         File/separator
-         "")))
+  (FilenameUtils/normalize (str path
+                                (if (.isDirectory (file path))
+                                  File/separator
+                                  ""))))
 
 
 (defn clean

@@ -7,4 +7,4 @@
   :aot [mirror-music]
   :repositories {"java.net" "http://download.java.net/maven/2"}
   ;; :disable-implicit-clean true
-  :manifest {"Main-Class" MirrorMusic})
+  :manifest {"Main-Class" "MirrorMusic"})
